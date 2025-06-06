@@ -1,12 +1,12 @@
 # Apache-Log-Analyzer-Using-PySpark
 ## Project Description
- This project presents a scalable solution for analyzing web server logs using Apache Spark through its Python API, PySpark. Designed as part of a Big Data Security initiative, the applicationprocesses large volumes of Apache HTTP access logs to extract actionable insights relevant to system monitoring and cybersecurity.
+This project offers an efficient and scalable approach for analyzing Apache HTTP access logs using Apache Spark’s Python interface — PySpark. Built with a focus on Big Data Security, it processes large volumes of unstructured log data to extract valuable insights related to system activity and potential security threats.
 
- The log data, typically unstructured, is parsed using regular expressions to extract meaningful fields such as IP address, timestamp, HTTP request method, requested URL, response status code, and data transfer size. PySpark’s distributed computing capabilities enable efficient processing, making the solution suitable for high-volume log environments.
+The application utilizes regular expressions to parse key fields from the logs, such as IP addresses, timestamps, request methods, URLs, status codes, and response sizes. By leveraging PySpark’s parallel processing capabilities, the system handles large-scale data analysis with speed and reliability.
  
- Following data extraction, the system performs several analytical operations, including identification of high-frequency IP addresses, most requested resources, and error code distributions. Results are visualized using Matplotlib to support interpretability and reporting. The project emphasizes anomaly detection by filtering client- and server-side error codes (4xx and 5xx), which are often indicators of malicious activity or system misconfiguration.
+Post data extraction, various analytical operations are performed, including detecting the most frequent IPs, identifying popular endpoints, and categorizing HTTP response codes. For better understanding and reporting, the outcomes are visualized using Matplotlib. Additionally, the system highlights anomalies by filtering out suspicious 4xx and 5xx status codes, which often signal potential attacks or server misconfigurations.
  
- The solution is implemented in Google Colab for accessibility and ease of deployment, requiring no local Spark installation. This project demonstrates how big data frameworks can support cybersecurity analysis by transforming raw server logs into structured intelligence.
+This solution is developed on Google Colab, making it easily accessible without needing a local Spark setup. Overall, the project showcases how big data tools can be effectively used to transform raw server logs into meaningful cybersecurity insights.
 ## Technologies Used
 * Apache Spark
 
@@ -25,4 +25,4 @@
 ## Author
 Muhammad Abdullah Bajwa  
 BS Cyber Security and Digital Forensics  
-Semester Project: Big Data Security - Log Analyzer using Apache Spark
+Big Data Security - Log Analyzer using Apache Spark
